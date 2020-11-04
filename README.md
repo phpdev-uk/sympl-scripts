@@ -16,3 +16,7 @@ Download wp-cli into `${HOME}/bin`:
 Copy `wp-update.sh` and `wp-update-all.sh` into `${HOME}/bin`
 
 The `wp-update-all.sh` script should automatically detect all WordPress sites based on the presence of a `wp-config.php` file.
+
+Core, all plugins and all themes will be updated automatically. There are no checks for whether updates are security related or not.
+
+Only plugins and themes available from wordpress.org will be updated. Premium plugins and themes may still need to be updated manually.
