@@ -14,3 +14,5 @@ Download wp-cli into `${HOME}/bin`:
 ```
 
 Copy `wp-update.sh` and `wp-update-all.sh` into `${HOME}/bin`
+
+The `wp-update-all.sh` script should automatically detect all WordPress sites based on the presence of a `wp-config.php` file.
