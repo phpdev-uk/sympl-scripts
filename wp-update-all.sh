@@ -1,5 +1,9 @@
 #!/bin/bash
 
+set -e
+set -u
+set -o pipefail
+
 WP_SITES=$(/usr/bin/find /srv -name wp-config.php | awk -F/ '{print $3}')
 
 if [ ! -z ${WP_SITES} ]; then
