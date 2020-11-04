@@ -2,6 +2,8 @@
 
 Extra scripts for [Sympl](https://sympl.host/).
 
+Although these scripts work with Sympl, the author is not affiliated with the project.
+
 ## WordPress
 
 Download wp-cli into `${HOME}/bin`:
