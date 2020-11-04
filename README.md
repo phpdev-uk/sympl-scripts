@@ -1,6 +1,6 @@
 # sympl-scripts
 
-Extra scripts for Sympl
+Extra scripts for [Sympl](https://sympl.host/).
 
 ## WordPress
 
