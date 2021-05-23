@@ -12,10 +12,8 @@ if [ ! -d ${SITE_PATH} ]; then
   exit 1
 fi
 
-echo "Verifying checksums for ${WP_SITE}"
-/usr/bin/php ${HOME}/bin/wp-cli.phar core verify-checksums --path=${SITE_PATH}
+/usr/bin/php ${HOME}/bin/wp-cli.phar core verify-checksums --path=${SITE_PATH} --quiet
 
-echo "Updating core, plugins and themes for ${WP_SITE}"
-/usr/bin/php ${HOME}/bin/wp-cli.phar core update --path=${SITE_PATH}
-/usr/bin/php ${HOME}/bin/wp-cli.phar plugin update --all --path=${SITE_PATH}
-/usr/bin/php ${HOME}/bin/wp-cli.phar theme update --all --path=${SITE_PATH}
+/usr/bin/php ${HOME}/bin/wp-cli.phar core update --path=${SITE_PATH} --quiet
+/usr/bin/php ${HOME}/bin/wp-cli.phar plugin update --all --path=${SITE_PATH} --quiet
+/usr/bin/php ${HOME}/bin/wp-cli.phar theme update --all --path=${SITE_PATH} --quiet
